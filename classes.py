@@ -11,14 +11,16 @@ class Combatant(object):
         self.speedstat = speedstat_ #integer
 
 '''
-A class that 
+Room
+A class that holds variables for rooms
 '''
 class Room():
-    def __init__(self, name_, lootable_, locked_, loot_=""):
+    def __init__(self, name_, lootable_, locked_, enemy_, loot_=""):
         self.name = name_ #String
         self.loot = loot_ #String
         self.lootable = lootable_ #Boolean
         self.locked = locked_ #Boolean
+        self.enemy = enemy_ #Boolean
     
     def set_description(self, description_):
         self.description = description_ #String
