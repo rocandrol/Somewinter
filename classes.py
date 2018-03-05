@@ -1,50 +1,33 @@
-import inn
-import funct
+"""
+This is a file containing all classes for Somewinter.
+Author: Emma Graves
+Date: 2/16/18 - x
+"""
 
 class Combatant(object):
-    name = None #String
-    hp = None #Integer
-    speedstat = None #Integer
+    def __init__(self, name_, hp_, speedstat_):
+        self.name = name_ #string
+        self.hp = hp_ #string
+        self.speedstat = speedstat_ #integer
 
+'''
+A class that 
+'''
 class Room():
-    name = None #String
-    description = None #String
-    loot = None #String
-    lootable = None #Boolean
-    locked = None #Boolean
-    deny = None #Boolean
+    def __init__(self, name_, lootable_, locked_, loot_=""):
+        self.name = name_ #String
+        self.loot = loot_ #String
+        self.lootable = lootable_ #Boolean
+        self.locked = locked_ #Boolean
+    
+    def set_description(self, description_):
+        self.description = description_ #String
+
+    def __str__(self):
+       return self.name #String
 
 class Item():
-    name = None #String
-    consumable = None #Boolean
-
-#Items:
-# jacket
-jacket = Item()
-jacket.name = "Dark green parka"
-jacket.consumable = False
-
-#Rooms: 
-# attic
-attic = Room()
-attic.description = "The roof is cracked and to your left you see a circular gable vent tilted open at a precarious angle. Dense and gentle snowflakes are wafting in through the broken roof. To your right is a gray, weathered door. You feel safe but terribly alone."
-attic.lootable = False
-
-# hallway
-hallway = Room()
-hallway.description = "You traced your way down the attic's stairwell and have reached a long hallway. There are three doors along its' length and a stairway at its end."
-hallway.lootable = False
-
-# bedroom 1
-
-# bedroom 2
-bedroom2 = Room()
-bedroom2.description = "The door was broken down and so you were able to get inside. There is a jostled bed and an old chest."
-bedroom2.lootable = True
-bedroom2.loot = jacket
-
-# bedroom 3
-
-# foyer
-foyer = Room()
-foyer.description = ""
+    # Init method, constructor
+    def __init__(self, name_, consumable_):
+        self.name = name_ #String
+        self.consumable = consumable_ #Boolean
