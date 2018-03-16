@@ -1,6 +1,5 @@
 # Somewinter
+# Author: Emma L. Graves
+• You awake in an inn. Are you going to get out?
 
-• You awake in an inn. Where are you going to go?
-
-This is a project I'm working on for my computer science class. This is a text-based game involving exploration, puzzles and combat.
-<div align = center> Testing alignment :^)</div>
+This is a project I've created over the course of three weeks for my computer science & engineering class. The game is a story driven and text based game involving combat, looting and exploration. These are bare bones, and I have intentions of eventually extending and polishing the game.
